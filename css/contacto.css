@@ -1,0 +1,141 @@
+.contacto{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 238, 220);
+}
+
+.contacto .contenedor{
+    align-items: flex-start;
+}
+
+.columna-100-50{
+    width: 100%;
+}
+
+.mapa-col{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #2B2B28;
+}
+
+.mapa{
+    width: 90%;
+    height: 400px;
+}
+
+.formulario{
+    padding: 10px;
+    padding-top: 0;
+    font-family: 'Pavanam', sans-serif;
+}
+
+.formulario .btn{
+    display: block;
+    width: 120px;
+    text-align: center;
+    background-color: #2B2B28;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+}
+
+.titulo-grupo, .titulo-columna{
+    font-family: 'Dancing Script', cursive;
+}
+
+.titulo-grupo{
+    text-align: center;
+    padding: 30px;
+    font-size: 3em
+}
+
+.columna-100-33 .titulo-columna{
+    border-bottom:1px solid #2B2B28;
+    
+}
+
+.contenedor-datos{
+    margin-top: 30px;
+    
+}
+
+.contenedor-formulario{
+    margin-top: 30px;
+}
+
+p{
+    font-family: 'Pavanam', sans-serif;
+}
+
+.icon-col-datos{
+    color: #2B2B28;
+    margin-right: 10px;
+}
+
+.SocialMediaIcon-ColDatos .icon-col-datos{
+    color: #2B2B28;
+    width: 35px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.SocialMediaIcon-ColDatos{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (min-width:480px){
+    .columna-100-50{
+        width: 50%;
+    }
+    
+    .mapa-col{
+        border-bottom: none;
+        border-right: 2px solid #2B2B28;
+    }
+    
+    .mapa-col .titulo-columna{
+        font-size: 2em
+    }
+    
+    .contenedor-datos .columna-100-33{
+        width: 100%;
+        text-align: left;
+        margin-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .mapa{
+        height: 800px;
+    }
+}
+
+@media screen and (min-width:1080px){
+        
+    .contenedor-datos .columna-100-33{
+        width: 30%;
+        float: left;
+    }
+    
+    .contenedor-formulario{
+    margin-top: 190px;
+    }
+    
+    .mapa{
+        height: 600px;
+    }
+    
+    .contenedor-datos .columna-100-33 p{
+        font-size: 0.7em;
+    }
+    
+    .columna-100-33 .icon-col-datos{
+        margin-right: 1px;
+    }
+
+}

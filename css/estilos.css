@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css?family=Imprima&display=swap');
+/* TITULOS font-family: 'Imprima', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Pavanam&display=swap');
+/*TEXTOS font-family: 'Pavanam', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap');
+
+/*-----ATRIBUTOS GENERALES-----*/
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/*-----------HEADER-----------*/
+
+.contenedor-header-principal{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-principal{
+    width: 100%;
+}
+
+.logo{
+    color: #2B2B28;
+    font-size: 1.8em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.logo-link{
+    color: #2B2B28;
+    text-decoration: none;}
+
+.logo-link:hover{
+    color: #E3B04B;
+    text-decoration: none;
+}
+
+
+.nav-principal{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(248, 248, 248, 0.8);
+    z-index: 2000;
+    position: relative;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #2B2B28;
+    border: 1.5px solid #2B2B28;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    line-height: 43px;
+}
+
+.icon-bar{
+    position: relative;
+    top: -3px;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    margin-left: 10px;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.social-icon__link:hover{
+    color: #E3B04B;
+}
+
+.menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(248, 248, 248, 0.8);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+}
+
+.menu-link{
+    display: block;
+    padding: 7px;
+    color: #2B2B28;
+    text-decoration: none;
+    font-family: 'Pavanam', sans-serif;
+}
+
+.menu-link__select{
+    background: #E3B04B; 
+}
+
+.menu-link:hover{
+    background: #E3B04B;
+    color:#2B2B28;
+    text-decoration: none;
+}
+
+.mostrar{
+    height: 190px;
+}
+
+/*responsive menu bar 1024px*/
+
+@media screen and (min-width:1024px){
+    
+    .icon-menu{
+        display: none;
+    }
+     .img-banner{
+        height: 850px}
+
+    .contenido-banner{
+        font-size: 3.5em
+    }
+
+    .menu{
+        position: static;
+        display: flex;
+        height: auto;
+        background-color: rgba(0,0,0,0);
+        width: auto;
+    }
+
+    .menu-link{
+        border-radius: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/*-----------HOME SECTION-----------*/
+
+img{
+    display: block;
+    width: 100%;
+}   
+.banner{
+    position: relative;
+    margin-top: -70px;
+}
+.img-banner{
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+}
+.contenido-banner{
+    width: 90%;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 45%;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1000;
+    font-family: 'Pavanam', sans-serif;
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.button-presupuesto{
+    position: absolute;
+    z-index: 1000;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: solid 3px transparent;
+    border-color: white;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Dancing Script', cursive;
+    background: none;
+    font-size: 1.6em;
+    color: white;
+    top: 78%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.button-presupuesto:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    transition-duration: 0.3s;
+    color: #2B2B28;
+}
+
+
+.BtnPresupuesto:link{
+    color: white;
+    text-decoration: none;
+}
+
+.BtnPresupuesto:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.BtnPresupuesto:hover{
+    color: #2B2B28;
+    text-decoration: none;
+}
+
+/*-----------NOSOTROS-----------*/
+
+.nosotros{
+    background-color: rgba(255, 238, 220);
+    justify-content: center;
+}
+
+.contenedor-nosotros{
+    background-color: rgba(255, 238, 220);
+    width: 100%;
+    padding: 10px;
+    text-align: justify;
+    padding-bottom: 75px;
+}
+
+.columna-100-50{
+    width: 100%;
+}
+
+.foto-perfil-1{
+    display: block;
+    object-fit: cover;
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 4px;
+    box-shadow: 7px 7px 5px gray;
+    margin: auto;
+    position: relative;
+}
+
+.foto-perfil-2{
+    display: block;
+    object-fit: cover;
+    width:  50%;
+    border: 5px solid white;
+    border-radius: 4px;
+    transform: rotate(10deg);
+    box-shadow: 7px 7px 5px gray;
+    margin: auto;
+   
+}
+
+.frase-nosotros{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #E3B04B;
+}
+
+
+.titulo-nosotros{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+.texto-nosotros{
+    margin-top: 20px;
+    font-size: 1em;
+    font-family: 'Pavanam', sans-serif;
+}
+
+.contenedor-texto{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media screen and (min-width:480px){
+    .button-presupuesto{
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width:680px){
+    
+    .columna-100-50{
+    width: 49%;
+    }
+    
+    .contenedor-nosotros{
+        display: flex;
+        align-items: center;
+        padding-top: 30px
+    }
+    
+    .contenedor-texto{
+        padding-right: 5px
+    }
+    
+    .texto-nosotros{
+        font-size: 1.2em;
+    }
+    
+    .contenedor-texto{
+        padding-left: 30px;
+    }
+    
+}
+
+@media screen and (min-width:1080px){
+    
+    .texto-nosotros{
+        font-size: 1.5em;
+    }
+    
+    .frase-nosotros{
+        font-size: 2em;
+    }
+    
+    .contenedor-texto{
+        padding-left: 60px;
+    }
+
+}

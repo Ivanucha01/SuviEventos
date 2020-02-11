@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Imprima&display=swap');
+/* TITULOS font-family: 'Imprima', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Pavanam&display=swap');
+/*TEXTOS font-family: 'Pavanam', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap');
+
+
+.footer-principal{
+    background-color: rgba(62, 62, 62);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.8em
+}
+
+.columna-100-33{
+    width: 100%;
+}
+
+.social-share-btn{
+    width: 160px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.3s ease width;
+}
+
+.social-share-btn:before{
+    content: "COMPARTIR";
+    position: absolute;
+    color: rgba(62, 62, 62);
+    text-align: center;
+    line-height: 1.5;
+    padding: 9px 0 11px 0;
+    opacity: 1;
+    transition: 0.3s ease opacity;
+    font-family: 'Pavanam', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.social-share-btn a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    margin: 0;
+    background-color: rgba(255, 238, 220);
+    transition: 0.3s ease margin, 0.3s ease background-color;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    color: rgba(255, 238, 220);
+    font-size: 1.8em;
+    padding-top: 2px;
+}
+
+.social-share-btn a i{
+    display: block;
+    width: 50%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 7px 0;
+    transition: 0.3s ease transform;
+    font-size: 1.5em;
+}
+
+.social-share-btn:hover{
+    width: 220px;
+}
+    
+.social-share-btn:hover:before{
+    opacity: 0;
+}
+
+.social-share-btn:hover a{
+    margin: 0 10px;
+    transform: scale(1);
+    color: white;
+}
+
+.social-share-btn:hover a:nth-child(1){
+    margin-left: 0;
+    background-color: #3b5998;
+}
+
+.social-share-btn:hover a i{
+    transform: scale(1);
+}
+
+.social-share-btn:hover a:nth-child(2){
+    margin-left: 0;
+    background-color: #f73275;
+}
+
+.social-share-btn:hover a:nth-child(3){
+    margin-left: 0;
+    background-color: #1da1f2;
+}
+
+.footer_link{
+    color: white;
+}
+
+.sub_footer{
+    font-size: 1.8em;
+    font-family: 'Dancing Script', cursive;
+    color: #E3B04B;
+}
+
+.footer_link{
+    font-family: 'Pavanam', sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer_link:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.contact_data{
+    display: flex;
+}
+
+.contact_icon{
+    margin: 6px;
+    font-size: 15px;
+}
+
+@media screen and (min-width:480px){
+    .columna-100-33{
+        width: 32%;
+        text-align: center;
+
+    }
+    
+    .top_link{
+        margin: 0;
+        padding-left: 0;
+        padding: 2px;
+        padding-right: 0;
+    }
+    
+    .contact_data{display: flex;
+        justify-content: center;
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+

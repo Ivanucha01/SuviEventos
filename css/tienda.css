@@ -1,0 +1,152 @@
+.tienda{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 238, 220);
+}
+
+.titulo-grupo{
+    text-align: center;
+    padding: 30px;
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.columna100-50{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-tienda1{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom:2px solid #2B2B28;
+}
+
+.subtitulo-grupo{
+    text-align: center;
+    padding: 15px;
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contenedor-tienda2{
+    padding-bottom: 20px;
+}
+
+.columna-100-50-25{
+    width: 100%
+}
+
+.slider{
+    padding:10px;
+    margin: 10px;
+    background-color: #2B2B28;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.subtitulo-slider{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #E3B04B; 
+}
+
+.texto-tienda{
+    font-family: 'Pavanam', sans-serif;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.logo-tienda{
+    display: block;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:480px){
+    
+    .columna-100-50{
+        width: 50%;
+    }
+    
+    .tienda .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center
+    }
+    
+    .columna-100-50-25{
+        width: 50%;
+    }
+    
+    .slider{
+        max-width: 40%;
+    }
+    
+    .img-carousel{
+        display: block;
+        object-fit: cover;
+        max-height: 300px;
+    }
+    
+    .texto-tienda{
+        margin-right: 15px;
+    }
+    
+    .contenedor-tienda1{
+        border-bottom: none;
+    }
+    
+    .contenedor-tienda1 .columna-100-50{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:680px){
+    .contenedor-tienda1 .columna-100-50{
+        width: 49%;
+    }
+    
+    .logo-tienda{
+        max-width: 500px; 
+        margin: auto;
+    }
+    
+    .contenedor-logo{
+        vertical-align: center;
+        margin-left: 10px;
+    }
+    
+    .contenedor-tienda1{
+        border-bottom: none;
+    }
+    
+    .contenedor-texto{
+        border-right:2px solid #2B2B28
+    }
+
+}
+
+@media screen and (min-width:1080px){
+    
+    .columna-100-50-25{
+        width: 25%;
+    }
+    
+    .slider{
+        max-width: 24%;
+    }
+    
+    .texto-tienda{
+        padding-left: 10%;
+        margin-right: 10%;
+    }
+    
+}
